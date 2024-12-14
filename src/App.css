@@ -508,8 +508,194 @@ section > * {
     font-weight: bold;
     color: #007bff;
 }
-
+/* Base Movie Details Layout */
 .movie-details {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.movie-info {
+    position: relative;
+    display: flex;
+    flex-direction: row; /* Horizontal layout for larger screens */
+    max-width: 800px;
+    width: 90%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.movie-info img {
+    border-radius: 12px;
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.content-overview {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+.content-overview h2 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.content-overview p {
+    font-size: 1rem;
+    color: #555;
+    flex-grow: 1;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.content-overview button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.content-overview button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive Layout for Small Screens */
+@media (max-width: 768px) {
+    .movie-info {
+        flex-direction: column; /* Stack the content vertically on mobile */
+        padding: 15px;
+    }
+
+    .movie-info img {
+        max-width: 150px; /* Smaller image on mobile */
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .content-overview h2 {
+        font-size: 1.4rem;
+    }
+
+    .content-overview p {
+        font-size: 0.95rem;
+        margin-bottom: 20px;
+    }
+
+    .content-overview button {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .close-button {
+        top: 15px;
+        right: 15px;
+        font-size: 26px;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* Additional Adjustments for Very Small Screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .movie-info {
+        padding: 12px;
+    }
+
+    .movie-info img {
+        max-width: 120px; /* Smaller image size for very small screens */
+        margin-bottom: 15px;
+    }
+
+    .content-overview h2 {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+
+    .content-overview p {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+
+    .content-overview button {
+        font-size: 0.95rem;
+        padding: 10px 18px;
+    }
+
+    .close-button {
+        top: 10px;
+        right: 10px;
+        font-size: 28px;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* Focus on mobile-first design */
+@media (max-width: 320px) {
+    .movie-info img {
+        max-width: 100px; /* Even smaller image for tiny screens */
+    }
+
+    .content-overview h2 {
+        font-size: 1.2rem;
+    }
+
+    .content-overview p {
+        font-size: 0.85rem;
+    }
+
+    .content-overview button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+/* .movie-details {
     position: fixed;
     top: 0;
     left: 0;
@@ -580,7 +766,7 @@ section > * {
 .movie-info button:disabled {
     background-color: #ccc;
     cursor: not-allowed;
-}
+} */
 
 .watchlist-cover {
     position: fixed;
