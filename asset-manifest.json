@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/moviewatchlist/static/css/main.1f7079a2.css",
+    "main.js": "/moviewatchlist/static/js/main.0b8da7e0.js",
+    "static/media/addmovie.jpg": "/moviewatchlist/static/media/addmovie.b1555f14478ad38ba571.jpg",
+    "index.html": "/moviewatchlist/index.html",
+    "main.1f7079a2.css.map": "/moviewatchlist/static/css/main.1f7079a2.css.map",
+    "main.0b8da7e0.js.map": "/moviewatchlist/static/js/main.0b8da7e0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1f7079a2.css",
+    "static/js/main.0b8da7e0.js"
+  ]
+}
