@@ -25,7 +25,7 @@ const Home = () => {
 
         fetchMovies();
 
-        const intervalId = setInterval(fetchMovies, 15000); // Store interval id for cleanup
+        const intervalId = setInterval(fetchMovies, 60000); // Store interval id for cleanup
 
         return () => clearInterval(intervalId); // Cleanup function using stored id
     }, []);
