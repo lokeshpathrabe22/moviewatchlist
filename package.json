@@ -2,7 +2,7 @@
     "name": "moviewatchlist",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://lokeshpathrabe22.github.com/moviewatchlist",
+    "homepage": "https://lokeshpathrabe22.github.io/moviewatchlist",
     "dependencies": {
         "@testing-library/jest-dom": "^5.17.0",
         "@testing-library/react": "^13.4.0",
