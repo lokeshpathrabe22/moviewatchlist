@@ -50,9 +50,9 @@ function App() {
 
             {/* Show search results only if there's a query */}
             {searchQuery ? (
-                <div>
+                <div  style={{ marginTop: "60px" }}>
                     <SearchResults query={searchQuery} />
-                </div>
+             </div>
             ) : (
                 <>
                     {/* Show home page when no search query */}
