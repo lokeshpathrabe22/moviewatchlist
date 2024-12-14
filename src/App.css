@@ -31,7 +31,8 @@ section > * {
 }
 
 .scrollcard {
-    margin: 20px;
+    margin: 20px 0px 20px 20px;
+    overflow: hidden;
 }
 
 .wrapper {
@@ -97,8 +98,8 @@ section > * {
 .button {
     display: inline-block;
     outline: none;
-    padding: 0.5em 1em;
-    margin: 6px;
+    padding: 0.5em 0.8em;
+    margin: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
     color: #444;
